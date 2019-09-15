@@ -75,6 +75,6 @@ class PlayState : StateBase
     static string timeFormat(float length)
     {
         var n = (int)length;
-        return $"{length / 60}:{length % 60:D2}";
+        return $"{n / 60}:{n % 60:D2}";
     }
 }
