@@ -11,9 +11,13 @@ class GUIController : MonoBehaviour
     public Slider timeSlider;
     public Image highlight;
 
-    public void Start()
+    public void Awake()
     {
         Screen.SetResolution(360, 640, false, 60);
+    }
+
+    public void Start()
+    {
         MainController.gui = this;
     }
 }
