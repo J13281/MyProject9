@@ -12,7 +12,7 @@ class GUIController : MonoBehaviour
 
     public void Start()
     {
-        Screen.SetResolution(540, 960, false, 60);
+        Screen.SetResolution(360, 640, false, 60);
         MainController.gui = this;
     }
 }
