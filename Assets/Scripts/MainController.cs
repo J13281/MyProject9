@@ -11,8 +11,6 @@ class MainController : MonoBehaviour
     public static List<string> musicList;
     public static Dictionary<string, MusicInfo> musics;
 
-    public string currentMusic;
-
     public void Start()
     {
         Program.Load(out musicList, out musics);
