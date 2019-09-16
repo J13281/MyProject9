@@ -27,7 +27,7 @@ class MainController : MonoBehaviour
             var obj = Instantiate(prefab, gui.canvas.transform);
             obj.name = name;
             obj.GetComponentInChildren<Text>().text = musics[name].title;
-            obj.transform.position += musics[name].position;
+            obj.transform.position = musics[name].position;
         }
     }
 

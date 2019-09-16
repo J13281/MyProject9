@@ -19,11 +19,16 @@ class Program
 
         musicList = source.Select(x => x.name).ToList();
 
+        var ox = 360 / 2;
+        var oy = 640 / 2;
+
         var y = 300;
+
         musics = new Dictionary<string, MusicInfo>();
         foreach (var item in source)
         {
-            musics[item.name] = new MusicInfo(item.name, item.title, new Vector3(0, y -= 40, 0));
+            y -= 40;
+            musics[item.name] = new MusicInfo(item.name, item.title, new Vector3(ox, oy + y, 0));
         }
     }
 }

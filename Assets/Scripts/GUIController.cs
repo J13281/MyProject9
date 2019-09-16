@@ -9,6 +9,7 @@ class GUIController : MonoBehaviour
     public Text timeText;
     public Text titleText;
     public Slider timeSlider;
+    public Image highlight;
 
     public void Start()
     {
