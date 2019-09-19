@@ -16,7 +16,7 @@ class MusicChangeState : StateBase
         audioSource.clip = clip;
 
         MainController.gui.titleText.text = MainController.musics[name].title;
-        MainController.gui.highlight.transform.position = MainController.musics[name].position;
+        MainController.gui.highlight.SendMessage("Move", MainController.musics[name].position);
 
         Transition(new PlayState(name));
     }
